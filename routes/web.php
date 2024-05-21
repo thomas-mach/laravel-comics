@@ -18,17 +18,9 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('partials.comics');
+    return view('comics');
 })->name('comics');
 
 Route::get('/contacts', function () {
-    return view('partials.contacts');
+    return view('contacts');
 })->name('contacts');
-
-Route::get('/partials', function () {
-    return view('partials.header');
-})->name('header');
-
-Route::get('/partials', function () {
-    return view('partials.footer');
-})->name('footer');
